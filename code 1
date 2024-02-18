@@ -1,0 +1,27 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.7;
+
+contract SimpleContract {
+  uint a;
+  uint b;
+    // Declare a state variable
+    uint public myNumber;
+
+    // Function to set the value of myNumber
+    function setMyNumber(uint _newValue)external{
+        myNumber = _newValue;
+       
+    }
+    function sumfunction() private view returns(uint h){
+return a+b;
+
+    }
+  
+      
+    // Function to get the current value of myNumber
+    function getMyNumber() internal  view returns (uint) {
+         uint g = sumfunction();//local variable
+         return g;
+     
+    }
+}
